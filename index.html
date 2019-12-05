@@ -1,0 +1,675 @@
+<!-- Project Name: E-commerce Application -->
+<!-- Starting Date: 11/27/2019 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-commerce Application</title>
+  <link rel="stylesheet" type="text/css" href="/assets/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+</head>
+
+<body>
+  <!-- Header Starts -->
+  <header>
+    <!-- top header start -->
+    <div class="top-header">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-12">
+            <ul class="list-unstyled m-0">
+              <li><a href="tel:+8801728288363" class="nav-item nav-link">+8801728288363</a></li>
+              <li><a href="#" class="nav-item nav-link">Deals</a></li>
+              <li><a href="#" class="nav-item nav-link">Help</a></li>
+              <li><a href="#" class="nav-item nav-link">Sale</a></li>
+              <li><a href="#" class="nav-item nav-link">Your Account</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top header ends -->
+
+    <!-- Secondary Header Starts -->
+    <nav class="navbar navbar-expand-md">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-2">
+              <div class="logo">
+                <a class="navbar-brand h2" href="#">Bekhama Shop</a>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <form>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <select class="btn bth-hr custom-select" id="nav-search">
+                      <option selected>All</option>
+                      <option value="1">Gadgets</option>
+                      <option value="2">Electronics</option>
+                      <option value="3">Fashion</option>
+                      <option value="3">Cars</option>
+                    </select>
+                  </div>
+                  <input type="search" class="form-control" placeholder="Search By Category" aria-label="search"
+                    aria-describedby="nav-search">
+                  <div class="input-group-prepend">
+                    <button class="btn btn-hr" type="submit">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-2">
+              <div class="nav-cart">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" data-toggle="tooltip" data-placement="bottom" title="Your Wishlist" href="#">
+                      <i class="fas fa-shopping-cart"></i>
+                      <span>0 Items</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Seccondary Header ends -->
+  </header>
+  <!-- Header Ends -->
+
+  <!-- Main content Starts -->
+  <main>
+    <!-- Home Section Starts -->
+    <section id="home">
+      <div class="container-fluid">
+        <div class="row h-100 align-items-center justify-content-start">
+          <div class="col-md-12">
+            <div class="home-content">
+              <h1 class="display-5">Today's Deal</h1>
+              <h1 class="display-3">Get 40% Discount On</h1>
+              <h3>Product Name</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home Section Ends -->
+
+    <!-- Recent Section Starts -->
+    <section id="all" class="pt-4 pb-4">
+      <div class="container-fluid">
+        <div class="row h-100">
+          <div class="col-md-3">
+            <aside>
+              <div class="section-title">
+                <h3>Categories</h3>
+              </div>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="dropdown-toggle" href="#" id="men" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    Men's Fashion
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="men">
+                    <a class="dropdown-item" href="#">Formal Shirts</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Formal Pants</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Mens Sunglass</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Shoes</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Casual Shirts</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Tees</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Jeans</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Shorts</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Jogs & Sweatpants</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="dropdown-toggle" href="#" id="women" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Women's Fashion
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="women">
+                    <a class="dropdown-item" href="#">Saree</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Salwar / Kamiz</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Hijabs</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Tops</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Tees</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">T-Shirts</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Jeans</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Shorts</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Jogs & Sweatpants</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="dropdown-toggle" href="#" id="electronics" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Electronics & Home Appliance
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="electronics">
+                    <a class="dropdown-item" href="#">Television</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Iron</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Water Purifier</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Microwave</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Air Conditioner</a>
+                  </div>
+                </li>
+                <li>
+                  <a class="dropdown-toggle" href="#" id="computer" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Computer & Accessories
+                    <i class="fas fa-chevron-right"></i>
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="computer">
+                    <a class="dropdown-item" href="#">Monitor</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Mouse</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Laptop</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">PC</a>
+                    <div class="dropdown-divider"> </div>
+                    <a class="dropdown-item" href="#">Keyboards</a>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+          <div class="col-md-9">
+            <!-- Recent Section Starts -->
+            <section class="recent pb-4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-title">
+                      <h3>Recent Items</h3>
+                    </div>
+                    <div class="card-deck">
+                      <div class="card">
+                        <img src="/assets/img/recent/1.jpg" class="card-img-top" alt="Recent">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Cannon DSLR Camera</a href="#">
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/assets/img/recent/2.jpg" class="card-img-top" alt="Recent">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Drone DJI Mavic Air.</a href="#">
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/assets/img/recent/3.jpg" class="card-img-top" alt="Recent">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Cannon DSLR Camera</a href="#">
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img src="/assets/img/recent/4.jpg" class="card-img-top" alt="Recent">
+                        <div class="card-body">
+                          <a href="#" class="card-title">Cannon DSLR Camera</a href="#">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Recent Section Ends -->
+
+            <!-- Popular section Starts -->
+            <section class="popular pt-4 pb-4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-title">
+                      <h3>Popular</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/popular/1.jpg">
+                        <img src="/assets/img/popular/1.jpg" alt="Popular Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Oxidised German Silver Handcrafted Lotus-Shaped Jewellery Set-DG094</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;450</p>
+                          <strike>&dollar;600</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <p>(28)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/popular/2.jpg">
+                        <img src="/assets/img/popular/2.jpg" alt="Popular Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">SKMEI Watch-9127BU</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;1200</p>
+                          <strike>&dollar;1700</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <p>(30)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/popular/3.jpg">
+                        <img src="/assets/img/popular/3.jpg" alt="Popular Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Gucci Tie</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;600</p>
+                          <strike>&dollar;700</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <p>(26)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Popular Section Ends -->
+
+            <!-- mens section Starts -->
+            <section class="mens pt-4 pb-4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-title">
+                      <h3>Men's Fashion</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/men/1.jpg">
+                        <img src="/assets/img/men/1.jpg" alt="Mens Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Cotty For Men</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;100</p>
+                          <strike>&dollar;250</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <p>(28)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/men/2.jpg">
+                        <img src="/assets/img/men/2.jpg" alt="Popular Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">SKMEI Watch-9127BU</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;1700</p>
+                          <strike>&dollar;2000</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <p>(30)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/men/3.jpg">
+                        <img src="/assets/img/men/3.jpg" alt="Popular Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Sneakey Steve Brown Shoe</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;600</p>
+                          <strike>&dollar;800</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <p>(26)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- mens Section Ends -->
+
+            <!-- womens section Starts -->
+            <section class="woman pt-4 pb-4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-title">
+                      <h3>Woman's Fashion</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/woman/1.jpg">
+                        <img src="/assets/img/woman/1.jpg" alt="woman Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Cowgirl Hats with diffrent Colors</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;100</p>
+                          <strike>&dollar;250</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <p>(28)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/woman/2.jpg">
+                        <img src="/assets/img/woman/2.jpg" alt="woman Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Winter Super Warmer Jackets </p>
+                        <div class="price">
+                          <p class="p-price">&dollar;700</p>
+                          <strike>&dollar;1000</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <p>(30)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/woman/3.jpg">
+                        <img src="/assets/img/woman/3.jpg" alt="woman Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Pink Shoes for Woman</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;100</p>
+                          <strike>&dollar;250</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <p>(26)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- womens Section Ends -->
+
+            <!-- Electronics section Starts -->
+            <section class="electronics pt-4 pb-4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-title">
+                      <h3>Electronics & Home Applience</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/electronics/1.jpg">
+                        <img src="/assets/img/electronics/1.jpg" alt="electronics Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Black Colored Headphone</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;700</p>
+                          <strike>&dollar;1000</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <p>(28)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/electronics/2.jpg">
+                        <img src="/assets/img/electronics/2.jpg" alt="electronics Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Samsung USB Keyboard</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;100</p>
+                          <strike>&dollar;200</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <p>(30)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/electronics/3.jpg">
+                        <img src="/assets/img/electronics/3.jpg" alt="electronics Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Apple White Color Earphone</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;400</p>
+                          <strike>&dollar;500</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <p>(26)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Electronics Section Ends -->
+
+            <!-- Computer section Starts -->
+            <section class="computer pt-4 pb-4">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-title">
+                      <h3>Computer & Accessories</h3>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/computer/1.jpg">
+                        <img src="/assets/img/computer/1.jpg" alt="computer Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Apple Notebook</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;1200</p>
+                          <strike>&dollar;1500</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <p>(28)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/computer/2.jpg">
+                        <img src="/assets/img/computer/2.jpg" alt="computer Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Macbook Pro Core I5 White</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;2500</p>
+                          <strike>&dollar;4000</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i>
+                          <p>(30)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="card">
+                      <a href="/assets/img/computer/3.jpg">
+                        <img src="/assets/img/computer/3.jpg" alt="computer Items" class="card-img-top">
+                      </a>
+                      <div class="card-body">
+                        <p class="card-title">Apple Iphone 6s Plus</p>
+                        <div class="price">
+                          <p class="p-price">&dollar;400</p>
+                          <strike>&dollar;600</strike>
+                        </div>
+                        <div class="review d-flex">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star-half-alt"></i>
+                          <p>(26)</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- Computer Section Ends -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recent Section Ends -->
+  </main>
+  <!-- Main content Ends -->
+
+  <!-- jQuery & Bootstrap JS -->
+  <script src="/assets/js/jquery.min.js"></script>
+  <script src="/assets/js/popper.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <!-- Main Jquery and Bootstrap ends -->
+
+  <!-- animate js start -->
+  <script src="/assets/js/wow.min.js"></script>
+  <!-- Animate js ends -->
+
+  <!-- Main js start -->
+  <script src="/assets/js/main.js"></script>
+  <!-- main js end -->
+</body>
+
+</html>

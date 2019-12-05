@@ -1,0 +1,343 @@
+// Variable 
+
+// Color 
+
+$primary : #673AB7;
+$p-dark : #512DA8;
+$p-light : #f4f4f4;
+
+
+$text-color: #212121;
+$t-secondary : #757575;
+$accent : #536DFE;
+$text-icon : #FFFFFF;
+$divider : #BDBDBD;
+
+$review: #f1c40f;
+
+%btn {
+  margin: 10px;
+  padding: 10px 15px;
+  background-color: $accent;
+  color: $p-light;
+}
+
+%focus {
+  color: $t-secondary;
+  background-color: $text-icon;
+  border-color: $accent;
+  box-shadow: 0 0 0 .2rem rgba(27, 0, 0, .25);
+}
+
+%commonCard {
+  border: none;
+
+  %commonCardBody {
+    background-color: $accent;
+    border-radius: 0 0 5px 5px;
+    min-height: 140px;
+
+    %commonCardTitle {
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0;
+      color: $p-light;
+    }
+
+    %commonPrice {
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      font-weight: 800;
+
+      %commonStrike {
+        color: $text-color;
+      }
+
+      %common-p {
+        color: $text-icon;
+        margin: 0;
+      }
+    }
+
+    %commonReview {
+      align-items: center;
+
+      %common-i {
+        font-size: 13px;
+        color: #f1c40f;
+      }
+
+      %common-rp {
+        margin-bottom: 0;
+        font-size: 12px;
+        color: $p-light
+      }
+    }
+  }
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 10px;
+
+  h3 {
+    font-weight: 800;
+    color: $p-dark;
+  }
+}
+
+/* Common CSS Starts */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  width: 100%;
+  position: relative
+}
+
+a,
+p {
+  color: $text-color;
+}
+
+%beforeAfter {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.form-control:focus,
+.btn:focus {
+  @extend %focus;
+}
+
+.btn-hr {
+  background-color: $accent;
+  color: $text-icon;
+}
+
+%bgCommon {
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  z-index: 1;
+}
+
+/* Common CSS Ends */
+
+/* Header CSS Starts */
+.top-header {
+  background-color: $p-dark;
+  text-align: center;
+
+  ul {
+    li {
+      display: inline-block;
+
+      a {
+        font-size: 14px;
+        padding: 5px 75px;
+        color: $text-icon;
+      }
+    }
+  }
+}
+
+nav {
+  background-color: $primary;
+
+  form {
+    input {
+      border: 1px solid $accent !important;
+    }
+  }
+
+  button {
+    right: 0;
+    border-radius: 0 5px 5px 0 !important;
+  }
+
+  select {
+    border: 1px solid $accent !important;
+    border-right: 1px solid $accent !important;
+    border-radius: 5px 0px 0 5px !important;
+    background-color: $p-light !important;
+    color: $text-color !important;
+  }
+
+  .logo {
+    a {
+      color: $text-icon;
+      margin: 0;
+      padding: 0;
+      font-size: 27px;
+    }
+  }
+
+  a {
+    color: $text-icon;
+  }
+}
+
+
+.nav-cart {
+  a {
+    font-size: 20px;
+    padding: 0;
+  }
+
+}
+
+/* Header CSS Ends */
+
+// Aside CSS Starts
+aside {
+  height: 100%;
+  background-color: $p-light;
+
+  .section-title {
+    text-align: center;
+  }
+
+  ul {
+    margin: 10px 15px;
+  }
+
+  li {
+    border-bottom: 1px solid $divider;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+
+    .dropdown-menu {
+      top: 0 !important;
+      left: 100% !important;
+      transform: translate(8%, 0%) !important;
+    }
+
+    a {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      font-weight: 700;
+      justify-content: space-between;
+    }
+
+    a:after {
+      content: none !important;
+    }
+  }
+}
+
+// Aside CSS Ends
+
+/* Home css Starts */
+#home {
+  @extend %bgCommon;
+  background-image: url('/assets/img/home/bg/1.jpg');
+  height: 80vh;
+}
+
+.home-content {
+  display: flex;
+  flex-flow: column;
+  height: 80vh;
+  width: auto;
+  justify-content: center;
+  margin-left: 16px;
+
+  .display-5 {
+    font-weight: 700;
+  }
+
+  .display-3 {
+    font-weight: 800;
+  }
+}
+
+/* Home css ends */
+
+// recent css starts
+.recent {
+  .card {
+    img {
+      display: block;
+      border-bottom: 1px solid $divider;
+    }
+
+    .card-body {
+      padding: 10px 0;
+      text-align: center;
+
+      h6 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// recent css Ends
+
+// popular CSS Starts
+.popular,
+.mens,
+.woman,
+.electronics,
+.computer {
+  .card {
+    position: relative;
+    @extend %commonCard;
+
+    .card-body {
+      @extend %commonCardBody;
+
+      .card-title {
+        @extend %commonCardTitle;
+      }
+
+      .price {
+        @extend %commonPrice;
+
+        strike {
+          @extend %commonStrike;
+        }
+
+        p {
+          @extend %common-p;
+        }
+      }
+
+      .review {
+        @extend %commonReview;
+
+        i {
+          @extend %common-i;
+        }
+
+        p {
+          @extend %common-rp;
+        }
+      }
+    }
+
+  }
+}
+
+// popular CSS ends
