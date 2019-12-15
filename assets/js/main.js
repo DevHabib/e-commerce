@@ -7,9 +7,11 @@
 
 		// tooltip starts
 		$(function () {
-			$('[data-toggle="tooltip"]').tooltip()
+			$('[data-toggle="tooltip"]').tooltip();
+			
 		})
 		// tooltip ends
+		$('.fw-dropdown').on('click', () => ($('.fw-dropdown-toggle').toggleClass('active')));
 	});
 
 	//Jquery clickable functions ends
