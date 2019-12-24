@@ -104,7 +104,7 @@
         <div class="row h-100 align-items-center">
           <div class="col md-12">
             <div class="others-home text-center">
-              <h1>Your Cart Items</h1>
+              <h1>payment Information</h1>
             </div>
           </div>
         </div>
@@ -112,186 +112,64 @@
     </section>
     <!-- Home Section Ends -->
 
-    <!-- Recent Section Starts -->
-    <div id="all" class="pt-4 pb-4">
-      <div class="container-fluid">
-        <div class="row h-100">
-          <div class="col-md-3">
-            <aside>
-              <div class="section-title">
-                <h3>Categories</h3>
+    <section class="pt-4 pb-4 fw-payment fw-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="fw-payment-top text-right mb-2">
+              <button class="fw-btn-secondary" type="submit">Show Order Details : <small>&dollar;1200.50</small></button>
+            </div>
+            <div class="fw-payment-main">
+              <div class="fw-payment-header">
+                <h2>Enter your shipping address</h2>
               </div>
-              <ul class="list-unstyled fw-sidebar">
-                <li class="fw-sidebar-list">
-                  <a class="fw-dropdown">
-                    <span>
-                      <i class="fas fa-tshirt"></i>
-                      Men's Fashion
-                    </span>
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                  <div class="fw-dropdown-toggle">
-                    <ul class="list-unstyled fw-sidebar">
-                      <li class="fw-sidebar-list">
-                        <a class="fw-dropdown" href="#">
-                          Formal Shirt
-                        </a>
-                      </li>
-                      <li class="fw-sidebar-list">
-                        <a class="fw-dropdown" href="#">
-                          Casual Shirt
-                        </a>
-                      </li>
-                      <li class="fw-sidebar-list">
-                        <a class="fw-dropdown" href="#">
-                          T-Shirt
-                        </a>
-                      </li>
-                      <li class="fw-sidebar-list">
-                        <a class="fw-dropdown" href="#">
-                          Jeans
-                        </a>
-                      </li>
-                      <li class="fw-sidebar-list">
-                        <a class="fw-dropdown" href="#">
-                          Shoes
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="fw-sidebar-list">
-                  <a class="fw-dropdown" href="#">
-                    <span>
-                      <i class="fas fa-tshirt"></i>
-                      Women's Fashion
-                    </span>
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-
-                </li>
-                <li class="fw-sidebar-list">
-                  <a class="fw-dropdown" href="#">
-                    <span>
-                      <i class="fas fa-tshirt"></i>
-                      Electronics & Home Appliance
-                    </span>
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-
-                </li>
-                <li class="fw-sidebar-list">
-                  <a class="fw-dropdown" href="#">
-                    <span>
-                      <i class="fas fa-tshirt"></i>
-                      Computer & Accessories
-                    </span>
-                    <i class="fas fa-chevron-right"></i>
-                  </a>
-                </li>
-              </ul>
-            </aside>
-          </div>
-          <div class="col-md-9">
-            <section class="fw-cart-section">
-              <div class="fw-single-cart">
-                <div class="fw-cart-img col-2">
-                  <img src="../assets/img/men/1.jpg" alt="">
+              <form method="post" class="fw-form row">
+                <div class="col-3">
+                  <input type="text" name="FirstName" id="FirstName" placeholder="First Name *" required
+                  >
                 </div>
-                <div class="fw-cart-description">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4>Mens Cotty</h4>
-                    </li>
-                    <li>
-                      <p>Delivery in 3-4 days | Free</p>
-                      <p>10 Days Replacement Policy</p>
-                    </li>
-                  </ul>
+                <div class="col-3">
+                  <input type="text" name="LastName" id="LastName" placeholder="Last Name *" required
+                  >
                 </div>
-                <div class="fw-cart-quantity">
-                  <ul class="list-unstyled">
-                    <li>
-                      <input type="number" placeholder="Quantity" name="quantity" id="selectItem" min="0" max="20">
-                    </li>
-                  </ul>
+                <div class="col-6">
+                  <input type="text" name="StreetAdress" id="StreetAdress" placeholder="Street Adress *" required
+                  >
                 </div>
-                <div class="fw-cart-price">
-                  <h5>&dollar;400.25</h5>
+                <div class="col-6">
+                  <input type="text" name="AptName" id="AptName" placeholder="Apertment Name or Street Adress *" required
+                  >
                 </div>
-                <div class="fw-cart-remove">
-                  <a href="#">
-                    <i class="fas fa-times"></i>
-                  </a>
+                <div class="col-6">
+                  <input type="text" name="ZipCode" id="ZipCode" placeholder="Zip Code *" required
+                  >
                 </div>
-              </div><div class="fw-single-cart">
-                <div class="fw-cart-img col-2">
-                  <img src="../assets/img/men/1.jpg" alt="">
+                <div class="col-6">
+                  <input type="text" name="City" id="City" placeholder="City & State *" required
+                  >
                 </div>
-                <div class="fw-cart-description">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4>Mens Cotty</h4>
-                    </li>
-                    <li>
-                      <p>Delivery in 3-4 days | Free</p>
-                      <p>10 Days Replacement Policy</p>
-                    </li>
-                  </ul>
+                <div class="col-6">
+                  <input type="text" name="Country" id="Country" placeholder="Country *" required
+                  >
                 </div>
-                <div class="fw-cart-quantity">
-                  <ul class="list-unstyled">
-                    <li>
-                      <input type="number" placeholder="Quantity" name="quantity" id="selectItem" min="0" max="20">
-                    </li>
-                  </ul>
+                <div class="col-12">
+                  <h3 class="fw-form-contact">enter your Contact Information</h3>
                 </div>
-                <div class="fw-cart-price">
-                  <h5>&dollar;400.25</h5>
+                <div class="col-6">
+                  <input type="number" name="mobile" id="mobile" placeholder="Mobile Number *" required>
                 </div>
-                <div class="fw-cart-remove">
-                  <a href="#">
-                    <i class="fas fa-times"></i>
-                  </a>
+                <div class="col-6">
+                  <input type="email" name="email" id="email" placeholder="Email Address">
                 </div>
-              </div>
-              <div class="fw-single-cart">
-                <div class="fw-cart-img col-2">
-                  <img src="../assets/img/men/1.jpg" alt="">
+                <div class="col-3">
+                  <button class="fw-btn fw-form-btn">Continue to payment</button>
                 </div>
-                <div class="fw-cart-description">
-                  <ul class="list-unstyled">
-                    <li>
-                      <h4>Mens Cotty</h4>
-                    </li>
-                    <li>
-                      <p>Delivery in 3-4 days | Free</p>
-                      <p>10 Days Replacement Policy</p>
-                    </li>
-                  </ul>
-                </div>
-                <div class="fw-cart-quantity">
-                  <ul class="list-unstyled">
-                    <li>
-                      <input type="number" placeholder="Quantity" name="quantity" id="selectItem" min="0" max="20">
-                    </li>
-                  </ul>
-                </div>
-                <div class="fw-cart-price">
-                  <h5>&dollar;400.25</h5>
-                </div>
-                <div class="fw-cart-remove">
-                  <a href="#">
-                    <i class="fas fa-times"></i>
-                  </a>
-                </div>
-              </div>
-            </section>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- Recent Section Ends -->
+    </section>
   </main>
   <!-- Main content Ends -->
 
